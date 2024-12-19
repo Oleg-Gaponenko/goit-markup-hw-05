@@ -471,11 +471,13 @@ footer .container {
   width: 264px;
 }
 
-.footer-socials {
+.footer-socials,
+.footer-newsletter {
   display: block;
 }
 
-.footer-socials-text {
+.footer-socials-text,
+.footer-newsletter-text {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -506,6 +508,58 @@ footer .container {
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-newsletter {
+  margin-left: auto;
+}
+
+.newsletter-mail {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #fff;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+}
+
+.newsletter-mail::placeholder {
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+}
+
+.newsletter-mail:focus {
+  border: 1px solid #31d0aa;
+}
+
+.newsletter-button {
+  display: inline-flex;
+  margin-left: 24px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter-icon {
+  fill: #fff;
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus {
   background-color: #31d0aa;
 }
 
@@ -600,7 +654,6 @@ footer .container {
 .form-label,
 .form-user-comment::placeholder,
 .policy-lable {
-  /* display: block;*/
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
@@ -608,9 +661,10 @@ footer .container {
 }
 .icon-wrapper {
   position: relative;
+  width: 100%;
 }
 .form-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   flex-shrink: 0;
   padding-left: 38px;
@@ -655,10 +709,7 @@ footer .container {
 .policy-container {
   margin: 16px auto 24px;
 }
-/*.policy-input {
-}
-.policy-lable {
-}*/
+
 .policy-checkbox {
   display: inline-flex;
   cursor: pointer;
