@@ -548,6 +548,7 @@ footer .container {
 
 .newsletter-button {
   display: flex;
+  min-width: 165px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -718,12 +719,10 @@ footer .container {
 
 .form-user-comment {
   width: 360px;
-  min-height: 138px;
+  min-height: 120px;
   resize: none;
-  outline: none;
   padding: 8px 16px;
-  height: 120px;
-  font-style: 12px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
